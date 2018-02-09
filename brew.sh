@@ -34,40 +34,46 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
-brew tap homebrew/versions
-brew install bash-completion2
-# We installed the new shell, now we have to activate it
-echo "Adding the newly installed shell to the list of allowed shells"
-# Prompts for password
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-# Change to the new shell, prompts for password
-chsh -s /usr/local/bin/bash
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Extra formulas
+declare -a formulas=(versions dupes science)
+for i in "${formulas[@]}" ; do
+    brew tap "homebrew/${i}"
+done
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# basic
+declare -a basic=(ack aspell curl homebrew/dupes/grep htop-osx gcc git jq homebrew/dupes/openssh node R the_silver_searcher vim watch wget)
+for i in "${basic[@]}" ; do
+    brew install "${i}"
+done
+
+# tools
+declare -a tools=(tmux zsh)
+for i in "${tools[@]}" ; do
+    brew install "${i}"
+done
+
+# node
+brew install watchman
+
+# notifications
+brew install reattach-to-user-namespace
+brew install terminal-notifier
+
+# linters
+brew install hadolint
+brew install shellcheck
+
+# utils
+brew install mackup
+
+# security
+brew install gpg2
+brew install gopass
 
 # Install Python
 brew install python
 brew install python3
-
-# Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
-LINE='eval "$(rbenv init -)"'
-grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
-
-# Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -75,104 +81,71 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
-brew install xz
-
-# Install other useful binaries.
-brew install ack
-brew install dark-mode
-#brew install exiv2
-brew install git
-brew install git-lfs
-brew install git-flow
-brew install git-extras
-brew install hub
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
-brew install speedtest_cli
-brew install ssh-copy-id
-brew install tree
-brew install webkit2png
-brew install zopfli
-brew install pkg-config libffi
-brew install pandoc
-
-# Lxml and Libxslt
-brew install libxml2
-brew install libxslt
-brew link libxml2 --force
-brew link libxslt --force
-
-# Install Heroku
-brew install heroku-toolbelt
-heroku update
-
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-# Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+# Browsers
+declare -a browsers=(freesmug-chromium firefox google-chrome)
+for i in "${browsers[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
 
-# Development tool casks
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
+# Archives
+declare -a archives=(appcleaner disk-inventory-x dropbox the-unarchiver)
+for i in "${archives[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
 
-# Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+# Utils
+declare -a utils=(fluid flux keepassx phoneclean veracrypt)
+for i in "${utils[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+# Productivity
+declare -a productivity=(alfred dash hammerspoon karabiner-elements keycue)
+for i in "${productivity[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
 
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# Development
+declare -a development=(emacs iterm2 visual-studio-code)
+for i in "${development[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
+ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
-# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+# Tools
+declare -a tools=(docker github-desktop launchrocket little-snitch mailplane postman)
+for i in "${tools[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
+
+# Visuals
+declare -a visuals=(docker github-desktop launchrocket little-snitch mailplane postman)
+for i in "${visuals[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
+
+# Quicklook
+declare -a quicklook=(quicklook-json qlmarkdown qlstephen)
+for i in "${quicklook[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
+
+# Work
+declare -a work=(quicklook-json qlmarkdown qlstephen)
+for i in "${work[@]}" ; do
+    brew install cask --appdir="/Applications" "${i}"
+done
+
+# Fonts
+brew tap caskroom
+declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts)
+for i in "${fonts[@]}" ; do
+    brew install cask "${i}"
+done
 
 # Remove outdated versions from the cellar.
 brew cleanup
