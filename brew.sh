@@ -78,63 +78,63 @@ brew install woff2
 # Browsers
 declare -a browsers=(freesmug-chromium firefox google-chrome)
 for i in "${browsers[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Archives
 declare -a archives=(appcleaner disk-inventory-x dropbox the-unarchiver)
 for i in "${archives[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Utils
 declare -a utils=(fluid flux keepassx phoneclean veracrypt)
 for i in "${utils[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Productivity
 declare -a productivity=(alfred dash hammerspoon karabiner-elements keycue)
 for i in "${productivity[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Development
 declare -a development=(emacs iterm2 visual-studio-code)
 for i in "${development[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
-declare -a tools=(docker github-desktop launchrocket little-snitch mailplane postman)
+declare -a tools=(docker ccmenu launchrocket little-snitch mailplane postman)
 for i in "${tools[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Visuals
-declare -a visuals=(docker github-desktop launchrocket little-snitch mailplane postman)
+declare -a visuals=(skitch xmind xscope)
 for i in "${visuals[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Quicklook
 declare -a quicklook=(quicklook-json qlmarkdown qlstephen)
 for i in "${quicklook[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+    brew cask install --appdir="/Applications" "${i}"
 done
 
-# Work
-declare -a work=(quicklook-json qlmarkdown qlstephen)
-for i in "${work[@]}" ; do
-    brew install cask --appdir="/Applications" "${i}"
+# Communication
+declare -a communication=(yakyak whale)
+for i in "${communication[@]}" ; do
+    brew cask install --appdir="/Applications" "${i}"
 done
 
 # Fonts
-brew tap caskroom
+brew tap caskroom/fonts
 declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts)
 for i in "${fonts[@]}" ; do
-    brew install cask "${i}"
+    brew cask install "${i}"
 done
 
 # Remove outdated versions from the cellar.
