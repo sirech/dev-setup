@@ -34,9 +34,11 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
+# Overwrite grep
+brew install grep --with-default-names
 
 # basic
-declare -a basic=(ack aspell curl homebrew/dupes/grep htop-osx gcc git jq homebrew/dupes/openssh R the_silver_searcher vim watch wget)
+declare -a basic=(ack aspell curl htop-osx gcc git jq openssh R the_silver_searcher vim watch wget)
 for i in "${basic[@]}" ; do
     brew install "${i}"
 done
