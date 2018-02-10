@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -34,12 +34,6 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
-
-# Extra formulas
-declare -a formulas=(versions dupes science)
-for i in "${formulas[@]}" ; do
-    brew tap "homebrew/${i}"
-done
 
 # basic
 declare -a basic=(ack aspell curl homebrew/dupes/grep htop-osx gcc git jq homebrew/dupes/openssh node R the_silver_searcher vim watch wget)
@@ -80,10 +74,6 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
-
-# Install Cask
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
 
 # Browsers
 declare -a browsers=(freesmug-chromium firefox google-chrome)
