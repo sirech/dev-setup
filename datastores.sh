@@ -21,14 +21,9 @@ brew update
 # Install data stores
 brew install mysql
 brew install postgresql
-brew install mongo
-brew install redis
-brew install elasticsearch
-
-# Install mysql workbench
-# Install Cask
-brew install caskroom/cask/brew-cask
-brew cask install --appdir="/Applications" mysqlworkbench
+# brew install mongo
+# brew install redis
+# brew install elasticsearch
 
 # Remove outdated versions from the cellar.
 brew cleanup
