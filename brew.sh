@@ -36,7 +36,7 @@ brew install gnu-sed --with-default-names
 brew install bash
 
 # basic
-declare -a basic=(ack aspell curl homebrew/dupes/grep htop-osx gcc git jq homebrew/dupes/openssh node R the_silver_searcher vim watch wget)
+declare -a basic=(ack aspell curl homebrew/dupes/grep htop-osx gcc git jq homebrew/dupes/openssh R the_silver_searcher vim watch wget)
 for i in "${basic[@]}" ; do
     brew install "${i}"
 done
