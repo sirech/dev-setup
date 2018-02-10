@@ -10,7 +10,7 @@ function runDots() {
     # Run sections based on command line arguments
     for ARG in "$@"
     do
-        if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "osxprep" ] || [ "$ARG" == "all" ]; then
             # Run the osxprep.sh Script
             echo ""
             echo "------------------------------"
@@ -19,7 +19,7 @@ function runDots() {
             echo ""
             ./osxprep.sh
         fi
-        if [ $ARG == "brew" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "brew" ] || [ "$ARG" == "all" ]; then
             # Run the brew.sh Script
             # For a full listing of installed formulae and apps, refer to
             # the commented brew.sh source file directly and tweak it to
@@ -32,7 +32,7 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
-        if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "osx" ] || [ "$ARG" == "all" ]; then
             # Run the osx.sh Script
             # I strongly suggest you read through the commented osx.sh
             # source file and tweak any settings based on your personal
@@ -47,7 +47,7 @@ function runDots() {
             echo ""
             ./osx.sh
         fi
-        if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "pydata" ] || [ "$ARG" == "all" ]; then
             # Run the pydata.sh Script
             echo "------------------------------"
             echo "Setting up Python data development environment."
@@ -55,7 +55,7 @@ function runDots() {
             echo ""
             ./pydata.sh
         fi
-        if [ $ARG == "aws" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "aws" ] || [ "$ARG" == "all" ]; then
             # Run the aws.sh Script
             echo "------------------------------"
             echo "Setting up AWS development environment."
@@ -63,7 +63,7 @@ function runDots() {
             echo ""
             ./aws.sh
         fi
-        if [ $ARG == "datastores" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "datastores" ] || [ "$ARG" == "all" ]; then
             # Run the datastores.sh Script
             echo "------------------------------"
             echo "Setting up data stores."
@@ -71,7 +71,7 @@ function runDots() {
             echo ""
             ./datastores.sh
         fi
-        if [ $ARG == "web" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "web" ] || [ "$ARG" == "all" ]; then
             # Run the web.sh Script
             echo "------------------------------"
             echo "Setting up JavaScript web development environment."
@@ -79,7 +79,7 @@ function runDots() {
             echo ""
             ./web.sh
         fi
-        if [ $ARG == "android" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "android" ] || [ "$ARG" == "all" ]; then
             # Run the android.sh Script
             echo "------------------------------"
             echo "Setting up Android development environment."
