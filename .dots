@@ -79,6 +79,14 @@ function runDots() {
             echo ""
             ./web.sh
         fi
+        if [ "$ARG" == "ruby" ] || [ "$ARG" == "all" ]; then
+            # Run the ruby.sh Script
+            echo "------------------------------"
+            echo "Setting up ruby tools."
+            echo "------------------------------"
+            echo ""
+            ./ruby.sh
+        fi
         if [ "$ARG" == "devops" ] || [ "$ARG" == "all" ]; then
             # Run the devops.sh Script
             echo "------------------------------"
