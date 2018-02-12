@@ -132,6 +132,12 @@ for i in "${communication[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
 
+# Security
+declare -a security=(keybase)
+for i in "${security[@]}" ; do
+    brew cask install --appdir="/Applications" "${i}"
+done
+
 # Fonts
 brew tap caskroom/fonts
 declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts)
