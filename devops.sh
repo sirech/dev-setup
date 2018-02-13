@@ -22,6 +22,7 @@ brew install consul
 brew install kubernetes-cli
 brew install terraform
 brew install vault
+brew install kubernetes-helm
 
 # Remove outdated versions from the cellar.
 brew cleanup
