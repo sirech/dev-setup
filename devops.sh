@@ -24,5 +24,8 @@ brew install terraform
 brew install vault
 brew install kubernetes-helm
 
+brew cask install virtualbox
+brew cask install minikube
+
 # Remove outdated versions from the cellar.
 brew cleanup
