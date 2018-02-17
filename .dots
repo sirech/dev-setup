@@ -95,6 +95,14 @@ function runDots() {
             echo ""
             ./devops.sh
         fi
+        if [ "$ARG" == "go" ] || [ "$ARG" == "all" ]; then
+            # Run the go.sh Script
+            echo "------------------------------"
+            echo "Setting up go tools."
+            echo "------------------------------"
+            echo ""
+            ./go.sh
+        fi
     done
 
     echo "------------------------------"
