@@ -26,5 +26,6 @@ brew cleanup
 npm install -g yarn
 npm install -g npm-check-updates
 npm install -g tern
+npm install -g flow-typed
 
 #gem install jekyll
