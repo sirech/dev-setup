@@ -22,6 +22,7 @@ brew install go
 go get -u -v github.com/alecthomas/gometalinter
 gometalinter --install --update
 go get -u github.com/nsf/gocode
+go get golang.org/x/tools/cmd/goimports
 
 # Remove outdated versions from the cellar.
 brew cleanup
