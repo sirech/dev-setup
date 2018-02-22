@@ -12,6 +12,13 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+#
+# GENERAL
+#
+
+# Show hidden files
+defaults write com.apple.finder AppleShowAllFiles YES
+
 # Avoid reopening windows after restart
 sudo chown root ~/Library/Preferences/ByHost/com.apple.loginwindow*
 sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
