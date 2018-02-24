@@ -10,4 +10,4 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 git clone https://github.com/syl20bnr/spacemacs.git ~/.emacs.d
 git clone https://github.com/sirech/spacemacs.d.git --origin github ~/.spacemacs.d
 
-git clone https://github.com/sirech/hammerspoon-config.git --origin github ~/.hammerspoon
+git clone https://github.com/sirech/hammerspoon.git --origin github ~/.hammerspoon

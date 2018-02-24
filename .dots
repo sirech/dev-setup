@@ -103,6 +103,14 @@ function runDots() {
             echo ""
             ./go.sh
         fi
+	if [ "$ARG" == "personal" ] || [ "$ARG" == "all" ]; then
+            # Run the personal.sh Script
+            echo "------------------------------"
+            echo "Setting up personal repos"
+            echo "------------------------------"
+            echo ""
+            ./personal.sh
+        fi
     done
 
     echo "------------------------------"

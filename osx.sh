@@ -23,6 +23,24 @@ defaults write com.apple.finder AppleShowAllFiles YES
 sudo chown root ~/Library/Preferences/ByHost/com.apple.loginwindow*
 sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
 
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Menu bar: hide the Time Machine, Volume, and User icons
+for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+    defaults write "${domain}" dontAutoLoad -array \
+        "/System/Library/CoreServices/Menu Extras/User.menu"
+done
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Disable "natural" (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Show battery percent
+defaults write com.apple.menuextra.battery ShowPercent YES
+
 #
 # iTerm 2
 #
@@ -31,3 +49,4 @@ sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dev-setup/apps/iterm2"
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
