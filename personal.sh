@@ -11,3 +11,5 @@ git clone https://github.com/syl20bnr/spacemacs.git ~/.emacs.d
 git clone https://github.com/sirech/spacemacs.d.git --origin github ~/.spacemacs.d
 
 git clone https://github.com/sirech/hammerspoon.git --origin github ~/.hammerspoon
+
+mkdir workspace

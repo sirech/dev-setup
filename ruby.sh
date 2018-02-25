@@ -16,3 +16,6 @@ CONFIGURE_OPTS='--with-readline-dir=/usr/include/readline' ~/.rbenv/bin/rbenv in
 ~/.rbenv/bin/rbenv global ${ruby_version}
 ~/.rbenv/shims/gem install bundle scss_lint_reporter_checkstyle
 sh ~/shell/irbrc/install.sh
+
+# Vi installs ruby
+brew uninstall ruby --ignore-dependencies
