@@ -41,6 +41,29 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # Show battery percent
 defaults write com.apple.menuextra.battery ShowPercent YES
 
+# Disable gamed
+# sudo defaults write /System/Library/LaunchAgents/com.apple.gamed.plist disabled -bool true
+
+# Disable warning when changing file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning false
+
+# Quit printer app once done
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" true
+
+# Revel extra info on clock click
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# Screenshots to docs
+mkdir -p "${HOME}/Documents/Screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Documents/Screenshots"
+
+#
+# Display
+#
+
+# Enable HiDPI display modes
+# sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+
 #
 # Safari
 #
@@ -59,3 +82,9 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dev-setu
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
+#
+# Finder
+#
+
+# Display full path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle true
