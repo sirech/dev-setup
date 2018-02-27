@@ -103,13 +103,21 @@ function runDots() {
             echo ""
             ./go.sh
         fi
-	if [ "$ARG" == "personal" ] || [ "$ARG" == "all" ]; then
+	      if [ "$ARG" == "personal" ] || [ "$ARG" == "all" ]; then
             # Run the personal.sh Script
             echo "------------------------------"
             echo "Setting up personal repos"
             echo "------------------------------"
             echo ""
             ./personal.sh
+        fi
+	      if [ "$ARG" == "exercism" ] || [ "$ARG" == "all" ]; then
+            # Run the exercism.sh Script
+            echo "------------------------------"
+            echo "Setting up exercism"
+            echo "------------------------------"
+            echo ""
+            ./exercism.sh
         fi
     done
 
