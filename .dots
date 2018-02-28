@@ -87,14 +87,6 @@ function runDots() {
             echo ""
             ./ruby.sh
         fi
-        if [ "$ARG" == "devops" ] || [ "$ARG" == "all" ]; then
-            # Run the devops.sh Script
-            echo "------------------------------"
-            echo "Setting up devops tools."
-            echo "------------------------------"
-            echo ""
-            ./devops.sh
-        fi
         if [ "$ARG" == "go" ] || [ "$ARG" == "all" ]; then
             # Run the go.sh Script
             echo "------------------------------"
@@ -102,6 +94,22 @@ function runDots() {
             echo "------------------------------"
             echo ""
             ./go.sh
+        fi
+        if [ "$ARG" == "java" ] || [ "$ARG" == "all" ]; then
+            # Run the java.sh Script
+            echo "------------------------------"
+            echo "Setting up java."
+            echo "------------------------------"
+            echo ""
+            ./java.sh
+        fi
+        if [ "$ARG" == "devops" ] || [ "$ARG" == "all" ]; then
+            # Run the devops.sh Script
+            echo "------------------------------"
+            echo "Setting up devops tools."
+            echo "------------------------------"
+            echo ""
+            ./devops.sh
         fi
 	      if [ "$ARG" == "personal" ] || [ "$ARG" == "all" ]; then
             # Run the personal.sh Script

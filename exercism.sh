@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
+# Install exercism
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -11,25 +11,17 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
-brew install yarn
+brew install exercism
+mkdir "${WORKSPACE}/exercism"
+exercism configure --dir="${WORKSPACE}/exercism"
+echo "In order to post solutions you need to do exercism configure --key=YOUR-API-KEY"
 
 # Remove outdated versions from the cellar.
 brew cleanup
-
-npm install -g npm-check-updates
-npm install -g tern
-npm install -g flow-typed
-
-# TypeScript
-npm install -g typescript
-npm install -g tslint
-
-#gem install jekyll
