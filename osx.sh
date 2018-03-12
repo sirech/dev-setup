@@ -60,7 +60,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Documents/Scree
 # Set computer name
 # shellcheck disable=SC2086
 read -rp 'Computer Name: ' computer
-# scutil --set HostName "${computer}"
+scutil --set HostName "${computer}"
 scutil --set LocalHostName "${computer}"
 scutil --set ComputerName "${computer}"
 dscacheutil -flushcache
