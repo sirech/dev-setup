@@ -96,3 +96,13 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # Display full path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle true
+
+#
+# Dock
+#
+
+# Only display active apps
+defaults write com.apple.dock static-only -bool TRUE
+
+# Set orientation
+defaults write com.apple.dock orientation -string left
