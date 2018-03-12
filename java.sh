@@ -19,7 +19,12 @@ fi
 brew update
 
 brew cask install caskroom/versions/java8
-brew cask install intellij-idea-ce
+read -rp "Use (paid) IntelliJ? (y/n)" answer
+if echo "$answer" | grep -iq "^y" ;then
+    brew cask install intellij-idea
+else
+    brew cask install intellij-idea-ce
+fi
 
 # Remove outdated versions from the cellar.
 brew cleanup
