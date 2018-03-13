@@ -106,3 +106,6 @@ defaults write com.apple.dock static-only -bool TRUE
 
 # Set orientation
 defaults write com.apple.dock orientation -string left
+
+# Icon size
+defaults write com.apple.dock tilesize -int 40
