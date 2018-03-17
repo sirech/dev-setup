@@ -31,5 +31,9 @@ npm install -g flow-typed
 # TypeScript
 npm install -g typescript
 npm install -g tslint
+npm install -g typescript-formatter
+
+# Angular Stuff
+npm install -g @angular/cli
 
 #gem install jekyll
