@@ -36,4 +36,7 @@ npm install -g typescript-formatter
 # Angular Stuff
 npm install -g @angular/cli
 
+# Gatsby
+npm install --global gatsby-cli
+
 #gem install jekyll
