@@ -109,7 +109,7 @@ done
 ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
-declare -a tools=(docker ccmenu launchrocket little-snitch mailplane postman)
+declare -a tools=(docker ccmenu etcher launchrocket little-snitch mailplane postman)
 for i in "${tools[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
