@@ -66,6 +66,8 @@ brew install mackup
 # security
 brew install gpg2
 brew install gopass
+brew install hopenpgp-tools
+brew install yubikey-personalization
 
 # Install Python
 brew install python
