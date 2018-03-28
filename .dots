@@ -111,6 +111,14 @@ function runDots() {
             echo ""
             ./devops.sh
         fi
+	      if [ "$ARG" == "security" ] || [ "$ARG" == "all" ]; then
+            # Run the security.sh Script
+            echo "------------------------------"
+            echo "Setting up security tools"
+            echo "------------------------------"
+            echo ""
+            ./security.sh
+        fi
 	      if [ "$ARG" == "personal" ] || [ "$ARG" == "all" ]; then
             # Run the personal.sh Script
             echo "------------------------------"
