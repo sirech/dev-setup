@@ -141,5 +141,8 @@ for i in "${fonts[@]}" ; do
     brew cask install "${i}"
 done
 
+# Drivers
+brew tap caskroom/drivers
+
 # Remove outdated versions from the cellar.
 brew cleanup
