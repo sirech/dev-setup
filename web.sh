@@ -39,4 +39,7 @@ npm install -g @angular/cli
 # Gatsby
 npm install --global gatsby-cli
 
+# RemarkJS
+npm install -g backslide
+
 #gem install jekyll
