@@ -86,7 +86,7 @@ for i in "${archives[@]}" ; do
 done
 
 # Utils
-declare -a utils=(fluid flux keepassx phoneclean veracrypt)
+declare -a utils=(fluid flux keepassxc phoneclean veracrypt)
 for i in "${utils[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
