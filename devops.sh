@@ -20,7 +20,7 @@ brew update
 
 brew install consul
 brew install kubernetes-cli
-brew install terraform
+brew install tfenv
 brew install vault
 brew install kubernetes-helm
 
