@@ -30,5 +30,10 @@ brew cask install yubico-authenticator
 # gopass
 brew install gopass
 
+# talisman
+curl https://thoughtworks.github.io/talisman/install.sh > /tmp/install-talisman.sh
+chmod +x /tmp/install-talisman.sh
+(cd /tmp && ./install-talisman.sh)
+
 # Remove outdated versions from the cellar.
 brew cleanup
