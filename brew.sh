@@ -86,7 +86,7 @@ for i in "${archives[@]}" ; do
 done
 
 # Utils
-declare -a utils=(fluid flux keepassxc phoneclean veracrypt)
+declare -a utils=(fluid keepassxc phoneclean veracrypt)
 for i in "${utils[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
@@ -105,7 +105,7 @@ done
 ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
-declare -a tools=(docker ccmenu etcher launchrocket little-snitch mailplane postman)
+declare -a tools=(docker ccmenu etcher launchrocket little-snitch postman)
 for i in "${tools[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
