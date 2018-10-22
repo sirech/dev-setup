@@ -129,7 +129,7 @@ for i in "${communication[@]}" ; do
 done
 
 # Security
-declare -a security=(keybase)
+declare -a security=(keybase private-internet-access)
 for i in "${security[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
