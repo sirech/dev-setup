@@ -24,7 +24,8 @@ brew install tfenv
 brew install vault
 brew install kubernetes-helm
 
-brew cask install virtualbox
+# brew cask install virtualbox
+brew cask install vagrant
 brew cask install minikube
 
 # Remove outdated versions from the cellar.
