@@ -21,16 +21,29 @@ function runDots() {
         fi
         if [ "$ARG" == "brew" ] || [ "$ARG" == "all" ]; then
             # Run the brew.sh Script
-            # For a full listing of installed formulae and apps, refer to
+            # For a full listing of installed formulae, refer to
             # the commented brew.sh source file directly and tweak it to
             # suit your needs.
             echo ""
             echo "------------------------------"
-            echo "Installing Homebrew along with some common formulae and apps."
+            echo "Installing Homebrew along with some common formulae."
             echo "This might awhile to complete, as some formulae need to be installed from source."
             echo "------------------------------"
             echo ""
             ./brew.sh
+        fi
+        if [ "$ARG" == "cask" ] || [ "$ARG" == "all" ]; then
+          # Run the cask.sh Script
+          # For a full listing of installed apps, refer to
+          # the commented brew.sh source file directly and tweak it to
+          # suit your needs.
+          echo ""
+          echo "------------------------------"
+          echo "Installing Homebrew along with some common apps."
+          echo "This might awhile to complete, as some formulae need to be installed from source."
+          echo "------------------------------"
+          echo ""
+          ./cask.sh
         fi
         if [ "$ARG" == "osx" ] || [ "$ARG" == "all" ]; then
             # Run the osx.sh Script
