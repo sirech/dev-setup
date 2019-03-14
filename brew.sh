@@ -49,6 +49,13 @@ for i in "${tools[@]}" ; do
     brew install "${i}"
 done
 
+# goodies
+brew tap wagoodman/dive
+declare -a goodies=(dive fd fzf ncdu)
+for i in "${goodies[@]}" ; do
+  brew install "${i}"
+done
+
 # node
 brew install watchman
 
