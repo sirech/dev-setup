@@ -28,7 +28,7 @@ for i in "${browsers[@]}" ; do
 done
 
 # Archives
-declare -a archives=(appcleaner disk-inventory-x dropbox the-unarchiver)
+declare -a archives=(appcleaner dropbox the-unarchiver)
 for i in "${archives[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
