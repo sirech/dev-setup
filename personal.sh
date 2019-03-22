@@ -17,4 +17,6 @@ git clone https://github.com/sirech/spacemacs.d.git --origin github ~/.spacemacs
 
 git clone https://github.com/sirech/hammerspoon.git --origin github ~/.hammerspoon
 
+git clone https://github.com/sirech/intelli-space.git --origin github ~/intelli-space
+
 mkdir -p workspace
