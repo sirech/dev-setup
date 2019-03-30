@@ -28,5 +28,8 @@ brew install kubernetes-helm
 brew cask install vagrant
 brew cask install minikube
 
+# AWS stuff
+pip install awslogs
+
 # Remove outdated versions from the cellar.
 brew cleanup
