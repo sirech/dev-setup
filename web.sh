@@ -18,12 +18,15 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
-brew install yarn
+brew install nvm
+mkdir -p ~/.nvm
 
 # Remove outdated versions from the cellar.
 brew cleanup
 
+nvm install --latest-npm
+
+npm install -g yarn
 npm install -g npm-check-updates
 npm install -g tern
 npm install -g flow-typed
