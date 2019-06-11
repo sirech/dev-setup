@@ -18,17 +18,24 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install consul
-brew install kubernetes-cli
 brew install tfenv
-brew install vault
-brew install kubernetes-helm
 
+# HashiCorp
+# brew install consul
+# brew install vault
+
+# VMs
 # brew cask install virtualbox
 brew cask install vagrant
-brew cask install minikube
+
+# K8s
+# brew cask install minikube
+# brew install kubernetes-cli
+# brew install kubernetes-helm
 
 # AWS stuff
+brew install awscli
+brew install awstools
 pip install awslogs
 
 # Remove outdated versions from the cellar.
