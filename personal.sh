@@ -19,4 +19,9 @@ git clone https://github.com/sirech/hammerspoon.git --origin github ~/.hammerspo
 
 git clone https://github.com/sirech/intelli-space.git --origin github ~/intelli-space
 
+ln -s "${PWD}/apps/vscode/settings.json" "$HOME/Library/Application Support/Code/User"
+ln -s "${PWD}/apps/vscode/snippets" "$HOME/Library/Application Support/Code/User"
+cat "${PWD}/apps/vscode/extensions" | xargs -L 1 code --install-extension
+
+
 mkdir -p workspace
