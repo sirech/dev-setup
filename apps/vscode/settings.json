@@ -1,15 +1,20 @@
 {
   "editor.fontSize": 17,
   "editor.fontFamily": "Inconsolata, Fira Code, Menlo, Monaco",
+
   "workbench.colorTheme": "Solarized Light",
-  "vim.useSystemClipboard": true,
-  "vim.visualstar": true,
   "terminal.integrated.fontFamily": "'inconsolata for powerline'",
 
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
 
+  "gitlens.codeLens.enabled": false,
+
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
   "vim.leader": "<space>",
+  "vim.easymotion": true,
+
   "vim.visualModeKeyBindings": [
     {
       "before": ["<leader>", "<space>"],
@@ -805,6 +810,5 @@
       "before": ["f", "d"],
       "after": ["<Esc>"]
     }
-  ],
-  "vim.easymotion": true
+  ]
 }
