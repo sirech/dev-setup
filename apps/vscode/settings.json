@@ -8,6 +8,13 @@
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
 
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
   "gitlens.codeLens.enabled": false,
 
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -1147,4 +1154,5 @@
       ]
     }
   ],
-  "vim.easymotion": true}
+  "vim.easymotion": true
+}
