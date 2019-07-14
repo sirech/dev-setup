@@ -27,7 +27,6 @@ brew cleanup
 nvm install --latest-npm
 
 npm install -g yarn
-npm install -g npm-check-updates
 npm install -g tern
 npm install -g flow-typed
 
@@ -35,12 +34,6 @@ npm install -g flow-typed
 npm install -g typescript
 npm install -g tslint
 npm install -g typescript-formatter
-
-# Angular Stuff
-npm install -g @angular/cli
-
-# Gatsby
-npm install --global gatsby-cli
 
 # RemarkJS
 npm install -g backslide
