@@ -8,6 +8,8 @@
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
 
+  "search.useGlobalIgnoreFiles": true,
+
   "eslint.validate": [
     "javascript",
     "javascriptreact",
