@@ -28,13 +28,13 @@ for i in "${browsers[@]}" ; do
 done
 
 # Archives
-declare -a archives=(appcleaner dropbox the-unarchiver)
+declare -a archives=(dropbox the-unarchiver)
 for i in "${archives[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
 
 # Utils
-declare -a utils=(fluid keepassxc phoneclean veracrypt)
+declare -a utils=(fluid keepassxc veracrypt)
 for i in "${utils[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
@@ -53,7 +53,7 @@ done
 ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
-declare -a tools=(docker ccmenu etcher little-snitch postman)
+declare -a tools=(docker ccmenu postman)
 for i in "${tools[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
@@ -83,10 +83,10 @@ for i in "${security[@]}" ; do
 done
 
 # Drawing
-declare -a drawing=(sketchbook wacom-intuos-tablet)
-for i in "${drawing[@]}" ; do
-  brew cask install --appdir="/Applications" "${i}"
-done
+# declare -a drawing=(sketchbook wacom-intuos-tablet)
+# for i in "${drawing[@]}" ; do
+#   brew cask install --appdir="/Applications" "${i}"
+# done
 
 # Fonts
 brew tap caskroom/fonts
