@@ -90,11 +90,11 @@
   {
     "key": "ctrl+j",
     "command": "search.action.focusNextSearchResult",
-    "when": "hasSearchResult"
+    "when": "hasSearchResult && searchViewletVisible"
   },
   {
     "key": "ctrl+k",
     "command": "search.action.focusPreviousSearchResult",
-    "when": "hasSearchResult"
+    "when": "hasSearchResult && searchViewletVisible"
   }
 ]
