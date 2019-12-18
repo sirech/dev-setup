@@ -30,12 +30,12 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# Install GNU `sed`, `g`-prefixed.
+brew install gnu-sed
 # Install Bash 4.
 brew install bash
-# Overwrite grep
-brew install grep --with-default-names
+# Overwrite `grep` , `g`-prefixed.
+brew install grep
 
 # basic
 declare -a basic=(ack aspell curl htop-osx gcc git jq openssh R the_silver_searcher vim watch wget)
