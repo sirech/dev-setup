@@ -82,11 +82,11 @@ for i in "${security[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
 
-# Drawing
-# declare -a drawing=(sketchbook wacom-intuos-tablet)
-# for i in "${drawing[@]}" ; do
-#   brew cask install --appdir="/Applications" "${i}"
-# done
+Drawing
+declare -a drawing=(sketchbook)
+for i in "${drawing[@]}" ; do
+  brew cask install --appdir="/Applications" "${i}"
+done
 
 # Fonts
 brew tap caskroom/fonts
