@@ -90,7 +90,7 @@ done
 
 # Fonts
 brew tap caskroom/fonts
-declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts)
+declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts font-jetbrains-mono)
 for i in "${fonts[@]}" ; do
     brew cask install "${i}"
 done

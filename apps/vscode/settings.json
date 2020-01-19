@@ -1,6 +1,6 @@
 {
-  "editor.fontSize": 17,
-  "editor.fontFamily": "Inconsolata, Fira Code, Menlo, Monaco",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono, Inconsolata, Fira Code, Menlo, Monaco",
 
   "workbench.colorTheme": "Solarized Light",
   "terminal.integrated.fontFamily": "'inconsolata for powerline'",

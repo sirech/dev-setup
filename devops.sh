@@ -25,7 +25,7 @@ brew install tfenv
 # brew install vault
 
 # VMs
-# brew cask install virtualbox
+brew cask install virtualbox
 brew cask install vagrant
 
 # K8s
