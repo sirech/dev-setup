@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ! -d "${HOME}/.ssh" ] ; then
-    ssh-keygen -t rsa
+    ssh-keygen -t ed2519
 fi
 
 git clone https://github.com/sirech/shell.git --origin github ~/shell

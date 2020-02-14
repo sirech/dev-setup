@@ -82,21 +82,21 @@ for i in "${security[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
 
-Drawing
+# Drawing
 declare -a drawing=(sketchbook)
 for i in "${drawing[@]}" ; do
   brew cask install --appdir="/Applications" "${i}"
 done
 
 # Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 declare -a fonts=(font-inconsolata font-inconsolata-for-powerline font-awesome-terminal-fonts font-jetbrains-mono)
 for i in "${fonts[@]}" ; do
     brew cask install "${i}"
 done
 
 # Drivers
-brew tap caskroom/drivers
+brew tap homebrew/cask-drivers
 
 # Remove outdated versions from the cellar.
 brew cleanup

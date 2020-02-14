@@ -18,8 +18,7 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew cask install java11
-brew cask install caskroom/versions/java8
+brew cask install java
 
 read -rp "Use (paid) IntelliJ? (y/n)" answer
 if echo "$answer" | grep -iq "^y" ;then
