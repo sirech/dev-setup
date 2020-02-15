@@ -19,9 +19,8 @@ fi
 brew update
 
 brew install exercism
-mkdir "${MINE}/exercism"
-exercism configure --dir="${MINE}/exercism"
-echo "In order to post solutions you need to do exercism configure --key=YOUR-API-KEY"
+mkdir -p "${MINE}/exercism"
+echo "In order to post solutions you need to do exercism configure --token=YOUR-API-KEY --workspace=$MINE/exercism"
 
 # Remove outdated versions from the cellar.
 brew cleanup
