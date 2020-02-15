@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ! -d "${HOME}/.ssh" ] ; then
-    ssh-keygen -t ed2519
+    ssh-keygen -t ed25519
 fi
 
 git clone https://github.com/sirech/shell.git --origin github ~/shell
@@ -24,5 +24,5 @@ ln -s "${PWD}/apps/vscode/keybindings.json" "$HOME/Library/Application Support/C
 ln -s "${PWD}/apps/vscode/snippets" "$HOME/Library/Application Support/Code/User"
 cat "${PWD}/apps/vscode/extensions" | xargs -L 1 code --install-extension
 
-
-mkdir -p workspace
+mkdir -p mine
+mkdir -p work
