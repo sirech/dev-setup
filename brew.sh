@@ -81,6 +81,7 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 brew install gomplate
+brew install goaccess
 
 # Remove outdated versions from the cellar.
 brew cleanup
