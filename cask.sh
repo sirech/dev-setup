@@ -71,7 +71,7 @@ for i in "${quicklook[@]}" ; do
 done
 
 # Communication
-declare -a communication=(whale slack google-chat)
+declare -a communication=(whale slack google-chat skype)
 for i in "${communication[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
