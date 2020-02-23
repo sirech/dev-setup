@@ -53,7 +53,7 @@ done
 ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
-declare -a tools=(docker ccmenu postman)
+declare -a tools=(docker ccmenu postman grammarly)
 for i in "${tools[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
