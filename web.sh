@@ -18,13 +18,16 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install nvm
-mkdir -p ~/.nvm
+brew install node
+
+mkdir -p ~/.n
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
 
 # Remove outdated versions from the cellar.
 brew cleanup
 
-nvm install --latest-npm
+n latest
 
 npm install -g yarn
 npm install -g tern
