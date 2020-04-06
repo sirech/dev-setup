@@ -82,6 +82,7 @@ brew install woff2
 
 brew install gomplate
 brew install goaccess
+brew install mkcert
 
 # Remove outdated versions from the cellar.
 brew cleanup
