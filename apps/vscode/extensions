@@ -12,8 +12,8 @@ flowtype.flow-for-vscode
 mauve.terraform
 mgmcdermott.vscode-language-babel
 mksafi.simple-autocomplete
-shinnn.stylelint
 steoates.autoimport
+stylelint.vscode-stylelint
 vscodevim.vim
 wix.vscode-import-cost
 Zignd.html-css-class-completion
