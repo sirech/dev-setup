@@ -32,12 +32,13 @@ brew cask install vagrant
 # brew cask install minikube
 brew install kubernetes-cli
 brew install derailed/k9s/k9s
-# brew install kubernetes-helm
+brew install kubernetes-helm
 
 # AWS stuff
 brew install awscli
 brew tap sam701/awstools
 brew install awstools
+pip3 install awslogs
 
 # Remove outdated versions from the cellar.
 brew cleanup
