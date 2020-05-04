@@ -33,12 +33,15 @@ brew cask install vagrant
 brew install kubernetes-cli
 brew install derailed/k9s/k9s
 brew install kubernetes-helm
+brew install kustomize
 
 # AWS stuff
 brew install awscli
 brew tap sam701/awstools
 brew install awstools
 pip3 install awslogs
+brew tap gjbae1212/gossm
+brew install gossm
 
 # Remove outdated versions from the cellar.
 brew cleanup
