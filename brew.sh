@@ -38,9 +38,15 @@ brew install bash
 brew install grep
 
 # basic
-declare -a basic=(ack aspell curl htop-osx gcc git jq openssh R the_silver_searcher vim watch wget)
+declare -a basic=(ack aspell curl htop-osx gcc git openssh R the_silver_searcher vim watch wget)
 for i in "${basic[@]}" ; do
     brew install "${i}"
+done
+
+# json
+declare -a json=(jq python-yq jsonnet)
+for i in "${json[@]}" ; do
+  brew install "${i}"
 done
 
 # tools
