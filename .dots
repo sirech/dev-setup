@@ -100,6 +100,14 @@ function runDots() {
             echo ""
             ./go.sh
         fi
+        if [ "$ARG" == "rust" ] || [ "$ARG" == "all" ]; then
+          # Run the rust.sh Script
+          echo "------------------------------"
+          echo "Setting up rust tools."
+          echo "------------------------------"
+          echo ""
+          ./rust.sh
+        fi
         if [ "$ARG" == "java" ] || [ "$ARG" == "all" ]; then
             # Run the java.sh Script
             echo "------------------------------"
