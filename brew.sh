@@ -86,6 +86,7 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
+brew install imagemagick
 brew install gomplate
 brew install goaccess
 brew install mkcert
