@@ -18,5 +18,15 @@ if test ! $(which rustup); then
 fi
 rustup update
 
+rustup component add \
+       rls \
+       rust-analysis \
+       rust-src \
+       clippy
+
+cargo install cargo-fix
+cargo install cargo-edit
+cargo install cargo-outdated
+
 # Remove outdated versions from the cellar.
 brew cleanup
