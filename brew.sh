@@ -75,6 +75,7 @@ brew install shellcheck
 
 # utils
 brew install mackup
+brew install bats
 
 # Install Python
 brew install python
