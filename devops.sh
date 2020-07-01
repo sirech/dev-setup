@@ -27,6 +27,7 @@ brew install tfenv
 # VMs
 brew cask install virtualbox
 brew cask install vagrant
+vagrant plugin install vagrant-scp
 
 # K8s
 # brew cask install minikube
