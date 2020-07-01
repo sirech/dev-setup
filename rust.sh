@@ -14,7 +14,7 @@ brew update
 
 if test ! $(which rustup); then
   echo "Installing rustup..."
-  curl https://sh.rustup.rs -sSf | sh -s -- --no-modify-path -y
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 fi
 rustup update
 
@@ -27,6 +27,12 @@ rustup component add \
 cargo install cargo-fix
 cargo install cargo-edit
 cargo install cargo-outdated
+
+# Build linux binaries from OSX
+rustup target add x86_64-unknown-linux-musl
+
+# Make smaller binaries
+brew install upx
 
 # Remove outdated versions from the cellar.
 brew cleanup
