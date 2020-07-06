@@ -49,6 +49,12 @@ for i in "${json[@]}" ; do
   brew install "${i}"
 done
 
+# http
+declare -a json=(httpie mkcert)
+for i in "${json[@]}" ; do
+  brew install "${i}"
+done
+
 # tools
 declare -a tools=(tmux zsh)
 for i in "${tools[@]}" ; do
@@ -90,7 +96,6 @@ brew install woff2
 brew install imagemagick
 brew install gomplate
 brew install goaccess
-brew install mkcert
 
 # Remove outdated versions from the cellar.
 brew cleanup
