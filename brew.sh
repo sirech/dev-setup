@@ -56,7 +56,7 @@ for i in "${json[@]}" ; do
 done
 
 # rust based
-declare -a rust=(bat ripgrep)
+declare -a rust=(bat ripgrep tokei)
 for i in "${rust[@]}" ; do
   brew install "${i}"
 done
