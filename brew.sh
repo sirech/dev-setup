@@ -38,7 +38,7 @@ brew install bash
 brew install grep
 
 # basic
-declare -a basic=(ack aspell curl htop-osx gcc git git-delta openssh ripgrep R the_silver_searcher tree vim watch wget)
+declare -a basic=(ack aspell curl htop-osx gcc git git-delta openssh R the_silver_searcher tree vim watch wget)
 for i in "${basic[@]}" ; do
     brew install "${i}"
 done
@@ -52,6 +52,12 @@ done
 # http
 declare -a json=(httpie mkcert)
 for i in "${json[@]}" ; do
+  brew install "${i}"
+done
+
+# rust based
+declare -a rust=(ripgrep)
+for i in "${rust[@]}" ; do
   brew install "${i}"
 done
 
