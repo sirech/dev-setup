@@ -10,7 +10,8 @@ source ~/.bashrc
 
 git clone https://github.com/zsh-users/zsh-completions.git --origin github ~/shell/zshrc/completions
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+
 
 git clone -b develop https://github.com/syl20bnr/spacemacs.git ~/.emacs.d
 git clone https://github.com/sirech/spacemacs.d.git --origin github ~/.spacemacs.d
