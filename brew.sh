@@ -56,7 +56,7 @@ for i in "${json[@]}" ; do
 done
 
 # rust based
-declare -a rust=(bat exa ripgrep tokei)
+declare -a rust=(bat fd exa ripgrep tokei)
 for i in "${rust[@]}" ; do
   brew install "${i}"
 done
@@ -69,7 +69,7 @@ done
 
 # goodies
 brew tap wagoodman/dive
-declare -a goodies=(dive fd fzf ncdu)
+declare -a goodies=(dive fzf ncdu)
 for i in "${goodies[@]}" ; do
   brew install "${i}"
 done
