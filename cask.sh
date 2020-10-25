@@ -22,7 +22,7 @@ brew update
 brew upgrade
 
 # Browsers
-declare -a browsers=(freesmug-chromium firefox google-chrome)
+declare -a browsers=(freesmug-chromium firefox google-chrome brave-browser)
 for i in "${browsers[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
@@ -50,7 +50,7 @@ declare -a development=(emacs iterm2 visual-studio-code)
 for i in "${development[@]}" ; do
     brew cask install --appdir="/Applications" "${i}"
 done
-ln -s ~/Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
+ln -s /Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
 declare -a tools=(docker ccmenu postman grammarly)
