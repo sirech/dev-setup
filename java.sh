@@ -18,13 +18,13 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew cask install java
+brew install --cask java
 
 read -rp "Use (paid) IntelliJ? (y/n)" answer
 if echo "$answer" | grep -iq "^y" ;then
-    brew cask install intellij-idea
+    brew install --cask intellij-idea
 else
-    brew cask install intellij-idea-ce
+    brew install --cask intellij-idea-ce
 fi
 
 # Remove outdated versions from the cellar.

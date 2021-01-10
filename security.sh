@@ -25,7 +25,7 @@ brew install hopenpgp-tools
 # yubikey
 brew install yubikey-personalization
 brew install pinentry-mac
-brew cask install yubico-authenticator
+brew install --cask yubico-authenticator
 
 # gopass
 brew install gopass

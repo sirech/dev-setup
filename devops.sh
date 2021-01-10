@@ -24,13 +24,16 @@ brew install tfenv
 # brew install consul
 # brew install vault
 
+# Packer
+brew install packer
+
 # VMs
-brew cask install virtualbox
-brew cask install vagrant
+brew install --cask virtualbox
+brew install --cask vagrant
 vagrant plugin install vagrant-scp
 
 # K8s
-# brew cask install minikube
+# brew install --cask minikube
 brew install kubernetes-cli
 brew install derailed/k9s/k9s
 brew install kubernetes-helm
