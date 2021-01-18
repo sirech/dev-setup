@@ -18,7 +18,7 @@ git clone https://github.com/sirech/spacemacs.d.git --origin github ~/.spacemacs
 
 git clone https://github.com/sirech/hammerspoon.git --origin github ~/.hammerspoon
 
-git clone https://github.com/sirech/intelli-space.git --origin github ~/intelli-space
+git clone https://github.com/MarcoIeni/intellimacs.git ~/.intellimacs
 
 ln -s "${PWD}/apps/vscode/settings.json" "$HOME/Library/Application Support/Code/User"
 ln -s "${PWD}/apps/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User"
