@@ -77,15 +77,9 @@ for i in "${communication[@]}" ; do
 done
 
 # Security
-declare -a security=(keybase private-internet-access)
+declare -a security=(keybase)
 for i in "${security[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
-done
-
-# Drawing
-declare -a drawing=(sketchbook)
-for i in "${drawing[@]}" ; do
-  brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Fonts
