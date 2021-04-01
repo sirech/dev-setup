@@ -24,68 +24,68 @@ brew upgrade
 # Browsers
 declare -a browsers=(freesmug-chromium firefox google-chrome brave-browser)
 for i in "${browsers[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Archives
 declare -a archives=(dropbox the-unarchiver)
 for i in "${archives[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Utils
 declare -a utils=(fluid keepassxc veracrypt)
 for i in "${utils[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Productivity
 declare -a productivity=(alfred dash hammerspoon karabiner-elements keycue)
 for i in "${productivity[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Development
 declare -a development=(emacs iterm2 visual-studio-code)
 for i in "${development[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 ln -s /Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
 
 # Tools
 declare -a tools=(docker ccmenu postman grammarly)
 for i in "${tools[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Visuals
 declare -a visuals=(skitch xmind xscope)
 for i in "${visuals[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Quicklook
 declare -a quicklook=(quicklook-json qlmarkdown qlstephen)
 for i in "${quicklook[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Communication
 declare -a communication=(whale slack google-chat skype)
 for i in "${communication[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Security
 declare -a security=(keybase private-internet-access)
 for i in "${security[@]}" ; do
-    brew install --cask --appdir="/Applications" "${i}"
+    brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Drawing
 declare -a drawing=(sketchbook)
 for i in "${drawing[@]}" ; do
-  brew install --cask --appdir="/Applications" "${i}"
+  brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Fonts
