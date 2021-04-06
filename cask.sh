@@ -28,7 +28,7 @@ for i in "${browsers[@]}" ; do
 done
 
 # Archives
-declare -a archives=(dropbox the-unarchiver)
+declare -a archives=(the-unarchiver)
 for i in "${archives[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
@@ -71,13 +71,13 @@ for i in "${quicklook[@]}" ; do
 done
 
 # Communication
-declare -a communication=(whale slack google-chat skype)
+declare -a communication=(whale slack)
 for i in "${communication[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
 
 # Security
-declare -a security=(keybase)
+declare -a security=()
 for i in "${security[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
