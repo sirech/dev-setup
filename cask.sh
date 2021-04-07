@@ -28,7 +28,7 @@ for i in "${browsers[@]}" ; do
 done
 
 # Archives
-declare -a archives=(the-unarchiver)
+declare -a archives=(google-drive the-unarchiver)
 for i in "${archives[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
@@ -77,7 +77,7 @@ for i in "${communication[@]}" ; do
 done
 
 # Security
-declare -a security=()
+declare -a security=(lastpass)
 for i in "${security[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
