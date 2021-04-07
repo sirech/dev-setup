@@ -50,7 +50,16 @@ declare -a development=(emacs iterm2 visual-studio-code)
 for i in "${development[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
+
+# Fix emacsclient
 ln -s /Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emacsclient
+
+# Fix Emacs launching in Catalina
+(cd ~/Applications/Emacs.app/Contents/MacOS &&
+   mv Emacs Emacs-launcher &&
+   ln -s Emacs-x86_64-10_14 Emacs)
+(cd ~/Applications/Emacs.app/Contents/ &&
+   rm -rf _CodeSignature)
 
 # Tools
 declare -a tools=(docker ccmenu postman grammarly)
