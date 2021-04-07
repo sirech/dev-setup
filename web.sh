@@ -18,7 +18,7 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
+brew install node n
 
 mkdir -p ~/.n
 export N_PREFIX=$HOME/.n
