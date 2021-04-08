@@ -18,7 +18,8 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install --cask java
+brew install openjdk@11
+sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
 read -rp "Use (paid) IntelliJ? (y/n)" answer
 if echo "$answer" | grep -iq "^y" ;then
