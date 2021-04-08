@@ -22,9 +22,9 @@ brew install --cask java
 
 read -rp "Use (paid) IntelliJ? (y/n)" answer
 if echo "$answer" | grep -iq "^y" ;then
-    brew install --cask intellij-idea
+  brew install --cask --appdir="~/Applications" intellij-idea
 else
-    brew install --cask intellij-idea-ce
+  brew install --cask --appdir="~/Applications" intellij-idea-ce
 fi
 
 # Remove outdated versions from the cellar.
