@@ -19,6 +19,7 @@ fi
 brew update
 
 brew install tfenv
+brew install lazydocker
 
 # HashiCorp
 # brew install consul
