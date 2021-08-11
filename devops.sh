@@ -19,6 +19,7 @@ fi
 brew update
 
 brew install tfenv
+brew install lazydocker
 
 # HashiCorp
 # brew install consul
@@ -35,6 +36,8 @@ vagrant plugin install vagrant-scp
 # K8s
 # brew install --cask minikube
 brew install kubernetes-cli
+# Docker installs its own version of kubectl
+brew link --overwrite kubernetes-cli
 brew install derailed/k9s/k9s
 brew install kubernetes-helm
 brew install kustomize

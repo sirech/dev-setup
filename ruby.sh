@@ -5,7 +5,7 @@
 # Ask for the administrator password upfront.
 sudo -v
 
-ruby_version=2.6.3
+ruby_version=2.7.1
 
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
