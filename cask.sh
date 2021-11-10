@@ -80,7 +80,7 @@ for i in "${quicklook[@]}" ; do
 done
 
 # Communication
-declare -a communication=(whale slack)
+declare -a communication=(whale slack discord)
 for i in "${communication[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
