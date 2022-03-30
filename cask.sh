@@ -62,7 +62,7 @@ ln -s /Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin/emac
    rm -rf _CodeSignature)
 
 # Tools
-declare -a tools=(docker ccmenu postman grammarly)
+declare -a tools=(ccmenu postman grammarly)
 for i in "${tools[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
