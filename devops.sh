@@ -18,6 +18,9 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
+# Docker
+brew install colima
+
 brew install tfenv
 brew install lazydocker
 
@@ -41,6 +44,8 @@ brew link --overwrite kubernetes-cli
 brew install derailed/k9s/k9s
 brew install kubernetes-helm
 brew install kustomize
+brew install krew
+kubectl krew install ctx ns whoami who-can
 
 # AWS stuff
 brew install awscli
