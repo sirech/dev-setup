@@ -19,6 +19,7 @@ fi
 brew update
 
 # Docker
+brew install docker
 brew install colima
 
 brew install tfenv
