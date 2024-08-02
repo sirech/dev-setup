@@ -19,10 +19,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Show hidden files
 defaults write com.apple.finder AppleShowAllFiles YES
 
-# Avoid reopening windows after restart
-sudo chown root ~/Library/Preferences/ByHost/com.apple.loginwindow*
-sudo chmod 000 ~/Library/Preferences/ByHost/com.apple.loginwindow*
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -41,9 +37,6 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 # Show battery percent
 defaults write com.apple.menuextra.battery ShowPercent YES
 
-# Disable gamed
-# sudo defaults write /System/Library/LaunchAgents/com.apple.gamed.plist disabled -bool true
-
 # Disable warning when changing file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning false
 
@@ -59,18 +52,11 @@ defaults write com.apple.screencapture location -string "${HOME}/Documents/Scree
 
 # Set computer name
 # shellcheck disable=SC2086
-read -rp 'Computer Name: ' computer
-scutil --set HostName "${computer}"
-scutil --set LocalHostName "${computer}"
-scutil --set ComputerName "${computer}"
-dscacheutil -flushcache
-
-#
-# Display
-#
-
-# Enable HiDPI display modes
-# sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+#read -rp 'Computer Name: ' computer
+#scutil --set HostName "${computer}"
+#scutil --set LocalHostName "${computer}"
+#scutil --set ComputerName "${computer}"
+#dscacheutil -flushcache
 
 #
 # Safari

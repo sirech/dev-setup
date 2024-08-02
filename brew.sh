@@ -2,17 +2,11 @@
 
 # Install command-line tools using Homebrew.
 
-# Ask for the administrator password upfront.
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until the script has finished.
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
   echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Make sure we’re using the latest Homebrew.
@@ -24,7 +18,6 @@ brew upgrade
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -44,7 +37,7 @@ for i in "${basic[@]}" ; do
 done
 
 # json
-declare -a json=(jq python-yq jsonnet)
+declare -a json=(jq python-yq)
 for i in "${json[@]}" ; do
   brew install "${i}"
 done
@@ -56,7 +49,7 @@ for i in "${json[@]}" ; do
 done
 
 # rust based
-declare -a rust=(bat fd exa procs ripgrep tokei)
+declare -a rust=(bat fd eza procs ripgrep tokei)
 for i in "${rust[@]}" ; do
   brew install "${i}"
 done
@@ -88,6 +81,7 @@ brew install shellcheck
 # utils
 brew install mackup
 brew install bats
+brew install rclone
 
 # Install Python
 brew install python
