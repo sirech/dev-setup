@@ -28,7 +28,7 @@ for i in "${archives[@]}" ; do
 done
 
 # Utils
-declare -a utils=(fluid keepassxc veracrypt)
+declare -a utils=(keepassxc veracrypt)
 for i in "${utils[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
