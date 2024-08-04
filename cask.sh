@@ -74,7 +74,7 @@ for i in "${quicklook[@]}" ; do
 done
 
 # Communication
-declare -a communication=(whale)
+declare -a communication=()
 for i in "${communication[@]}" ; do
     brew install --cask --appdir="~/Applications" "${i}"
 done
