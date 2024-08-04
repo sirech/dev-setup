@@ -1,4 +1,33 @@
 {
+    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+    "[python]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[java]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[kotlin]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[cpp]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[c]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[proto]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[rust]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "meta.global.history.enabled": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "terminal.integrated.systemd.shouldUse": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "window.restoreWindows": "none",
+    "extensions.experimental.deferredStartupFinishedActivation": true,
+
   "editor.fontSize": 15,
   "editor.fontFamily": "JetBrains Mono, Inconsolata, Fira Code, Menlo, Monaco",
   "workbench.colorTheme": "Solarized Light",
@@ -9,22 +38,7 @@
   "search.exclude": {
     "**/flow-typed": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.codeLens.enabled": false,
+
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "vim.useSystemClipboard": true,
   "vim.visualstar": true,
