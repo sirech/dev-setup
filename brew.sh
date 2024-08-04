@@ -31,7 +31,7 @@ brew install bash
 brew install grep
 
 # basic
-declare -a basic=(ack aspell curl htop-osx gcc git git-delta openssh R the_silver_searcher tree vim watch wget)
+declare -a basic=(ack aspell htop-osx gcc git git-delta openssh R the_silver_searcher tree vim watch wget)
 for i in "${basic[@]}" ; do
     brew install "${i}"
 done
