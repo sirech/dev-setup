@@ -100,5 +100,8 @@ brew install imagemagick
 brew install gomplate
 brew install goaccess
 
+# alternative to macfuse
+brew install macos-fuse-t/homebrew-cask/fuse-t-sshfs
+
 # Remove outdated versions from the cellar.
 brew cleanup
