@@ -58,6 +58,9 @@ defaults write com.apple.screencapture location -string "${HOME}/Documents/Scree
 #scutil --set ComputerName "${computer}"
 #dscacheutil -flushcache
 
+# Disabled press & hold to be able to hold a key
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 #
 # Safari
 #
