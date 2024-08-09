@@ -1,33 +1,39 @@
 {
-    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
-    "[python]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[java]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[kotlin]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[cpp]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[c]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[proto]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "[rust]": {
-        "files.trimTrailingWhitespace": false
-    },
-    "meta.global.history.enabled": true,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "terminal.integrated.systemd.shouldUse": true,
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "window.restoreWindows": "none",
-    "extensions.experimental.deferredStartupFinishedActivation": true,
-
+  "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+  "[python]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.pyls"
+  },
+  "[java]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.java"
+  },
+  "[kotlin]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.java"
+  },
+  "[cpp]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.cpp"
+  },
+  "[c]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.cpp"
+  },
+  "[proto]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "nuclide.arclint"
+  },
+  "[rust]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "facebook.rust-analyzer"
+  },
+  "meta.global.history.enabled": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "terminal.integrated.systemd.shouldUse": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "window.restoreWindows": "none",
+  "extensions.experimental.deferredStartupFinishedActivation": true,
   "editor.fontSize": 15,
   "editor.fontFamily": "JetBrains Mono, Inconsolata, Fira Code, Menlo, Monaco",
   "workbench.colorTheme": "Solarized Light",
@@ -38,13 +44,11 @@
   "search.exclude": {
     "**/flow-typed": true
   },
-
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "vim.useSystemClipboard": true,
   "vim.visualstar": true,
   "vim.leader": "<space>",
   "vim.easymotion": true,
-
   "vspacecode.bindingOverrides": [
     {
       "keys": [
@@ -130,7 +134,7 @@
       "name": "Search in project",
       "icon": "search",
       "type": "command",
-      "command": "workbench.action.findInFiles"
+      "command": "omni-search-ui:quick-search"
     },
     {
       "key": "0",
@@ -7842,5 +7846,11 @@
         }
       ]
     }
-  ]
+  ],
+  "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+  "interactive-smartlog.pull": "arc pull",
+  "interactive-smartlog.fetch": "jf get",
+  "interactive-smartlog.autoRunMergeDrivers": true,
+  "interactive-smartlog.right-drawer-width": 763,
+  "interactive-smartlog.bottom-drawer-height": 500
 }
