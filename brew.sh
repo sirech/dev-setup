@@ -28,6 +28,7 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, `g`-prefixed.
 brew install gnu-sed
+brew install gnu-tar
 # Install Bash 4.
 brew install bash
 # Overwrite `grep` , `g`-prefixed.
